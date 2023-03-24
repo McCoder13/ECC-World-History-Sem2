@@ -1,0 +1,118 @@
+.navbar {
+    position: fixed;
+    top: 0;
+}
+
+.section {
+    text-align: center;
+    font-size: 3vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0;
+}
+
+.sect1 {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Merriweather';
+}
+
+.sect1-part1 {
+    animation: sect1-part-fade 7.5s ease-in;
+}
+
+.sect1-part2 {
+    animation: sect1-part-fade 8.5s ease-in;
+    animation-delay: 7s;
+}
+
+.sect1-part3 {
+    animation: button-reveal 17.5s ease-in;
+    
+    opacity: 1;
+}
+
+.btn-explore {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #6e6e6e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Karla',-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 150%;
+    will-change: transform;
+  }
+  
+  .btn-explore:disabled {
+    pointer-events: none;
+  }
+  
+  .btn-explore:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .btn-explore:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  .about {
+    color: #fff;
+  }
+
+  .about:hover {
+    text-decoration: none;
+  }
+
+/* Animations, yay... */
+
+@keyframes sect1-part-fade {
+    0% {
+        opacity: 0;
+        }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        }
+}
+
+@keyframes button-reveal {
+    0% {
+        opacity: 0;
+        }
+
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        }
+}

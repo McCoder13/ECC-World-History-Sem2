@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;800&family=Merriweather&display=swap');
+/* Karla Weight: 200 & 800 */
+/* Merriweather Weight: 400 */
+
+/* 
+Colors
+Accent Blue: #596FC6
+Main Blue: #1C3CBA
+Accent Green: #61ba09
+Main Green: #3c6e0b
+*/
+
+body {
+    background: #000;
+    color: #fff;
+    margin: 0;
+    font-family: 'Merriweather', 'Times New Roman';
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.heading {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    padding: 14px 20px;
+    transition: all .2s ease;
+}
+
+.navbar a:hover {
+    color: #596FC6;
+}
+
+/* ===============================Footer=============================== */
+
+.footer-left {
+    display: inline;
+    position: fixed;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-left a{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-right {
+    display: inline;
+    position: fixed;
+    margin-right: 15px;
+    bottom: 0;
+    right: 0;
+}

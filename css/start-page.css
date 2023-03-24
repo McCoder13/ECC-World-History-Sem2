@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;800&family=Merriweather&display=swap');
+
+body {
+    background-image: -webkit-linear-gradient(3deg, #f4593a 8%, #cd1e38 100%);
+    background-image:    -moz-linear-gradient(3deg, #f4593a 8%, #cd1e38 100%);
+    background-image:     -ms-linear-gradient(3deg, #f4593a 8%, #cd1e38 100%);
+}
+
+#changeText {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Montserrat Subrayada;
+    font-size: 150px;
+    color: #E33E39;
+    text-shadow: 0 20px 40px rgba(0,0,0,.5);
+    -webkit-box-reflect: below -58px -webkit-gradient(linear, left top, left bottom,  from(transparent), color-stop(22%, transparent), to(rgba(255, 255, 255, 0.61)));
+}
+
+.portal-container {
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin: -50px 0 0 -130px;
+    border-radius: 10px;
+    width: 259px;
+    height: 124px;
+    font-family: Karla;
+    color: white;
+    font-size: 16px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    background-image: -webkit-linear-gradient(3deg, #f4593a 8%, #cd1e38 100%);
+}
+
+.button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    background:rgba(0, 0, 0, 0.589);
+    color: white;
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 800;
+    transition: all .2s ease;
+}
+
+.button:hover {
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.button:active {
+    background:rgb(0, 0, 0);
+    box-shadow: 10px 10px 25px rgb(0, 0, 0);
+}

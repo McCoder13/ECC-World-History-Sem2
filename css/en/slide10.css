@@ -1,0 +1,97 @@
+body {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    touch-action: none;
+    font-family: 'Karla';
+}
+
+/* ============================Containers============================== */
+
+.gen-desc h3 {
+    text-align: center;
+    margin: 10px;
+    transform: translate(0px, 0px);
+}
+
+.gen-desc p {
+    margin-left: 10px;
+}
+
+#gen1 {
+    transform: translate(-1000px, 0px);
+    animation: gen-desc 2s ease-out 0s forwards;
+}
+
+.img-globe {
+    z-index: -2;
+    position: absolute;
+    transform: translate(0px, 160px);
+    animation: gen-desc-img 2s ease-in 0s forwards;
+}
+
+/* ==============================Buttons=============================== */
+
+.continue-button {
+    opacity: 0;
+    padding: 20px 30px;
+    background: black;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px black;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    animation: fade 1s ease-in 20s forwards;
+}
+
+.continue-button a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+}
+
+/* =============================Animations============================= */
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes gen-desc {
+    0% {
+        transform: translate(-1000px, 100px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes gen-desc-out {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(340deg);
+        opacity: 0;
+    }
+}
+
+@keyframes gen-desc-img {
+    0% {
+        transform: translate(600px, 0px);
+    }
+    100% {
+        transform: translate(-180px, -440px);
+    }
+}

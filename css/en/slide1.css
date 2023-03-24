@@ -1,0 +1,260 @@
+body {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    touch-action: none;
+    font-family: 'Karla';
+}
+
+/* ==============================Day List============================== */
+
+.day-list {
+    text-align: center;
+    width: 100%;
+}
+
+.day-list span {
+    margin: 5px;
+}
+
+#dayOne {
+    opacity: 0;
+    animation: day 6s ease 1s forwards;
+}
+
+#dayTwo {
+    opacity: 0;
+    animation: day 6s ease 7s forwards;
+}
+
+#dayThree {
+    opacity: 0;
+    animation: day 6s ease 13s forwards;
+}
+
+#dayFour {
+    opacity: 0;
+    animation: day 6s ease 19s forwards;
+}
+
+#dayFive {
+    opacity: 0;
+    animation: day 6s ease 25s forwards;
+}
+
+#daySix {
+    opacity: 0;
+    animation: day 6s ease 31s forwards;
+}
+
+#daySeven {
+    opacity: 0;
+    animation: day 6s ease 37s forwards;
+}
+
+/* =============================Image List============================= */
+
+#imageOne {
+    z-index: -1;
+    width: 99%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: sub 6s ease 1s;
+    border-radius: 5px;
+}
+
+#imageTwo {
+    z-index: -1;
+    width: 99%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: sub 6s ease 7s;
+}
+
+#imageThree {
+    z-index: -1;
+    width: 99%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: sub 6s ease 13s;
+}
+
+#imageFour {
+    z-index: -1;
+    width: 99%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: sub 6s ease 19s;
+}
+
+#imageFive {
+    z-index: -1;
+    width: 99%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: sub 6s ease 25s;
+}
+
+#imageSix {
+    z-index: -1;
+    width: 99%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: sub 6s ease 31s;
+}
+
+#imageSeven {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-56%, -50%);
+    opacity: 0;
+    animation: sub 6s ease 37s forwards;
+}
+
+/* ==============================Sub List============================== */
+
+.sub-list span {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 100px;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+#subOne {
+    opacity: 0;
+    animation: sub 6s ease 1s;
+}
+
+#subTwo {
+    opacity: 0;
+    animation: sub 6s ease 7s;
+}
+
+#subThree {
+    opacity: 0;
+    animation: sub 6s ease 13s;
+}
+
+#subFour {
+    opacity: 0;
+    animation: sub 6s ease 19s;
+}
+
+#subFive {
+    opacity: 0;
+    animation: sub 6s ease 25s;
+}
+
+#subSix {
+    opacity: 0;
+    animation: sub 6s ease 31s;
+}
+
+#subSeven {
+    opacity: 0;
+    animation: day 6s ease 37s forwards;
+}
+
+/* ===============================Layers=============================== */
+
+.layer-one {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 0px;
+    width: 0px;
+    box-shadow: 0px -1px 200px 200px yellow;
+    animation: layer_one 0s ease-in 0s forwards;
+}
+
+.layer-two img{
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-56%, -50%);
+}
+
+/* ==============================Buttons=============================== */
+
+.continue-button {
+    opacity: 0;
+    padding: 20px 30px;
+    background: black;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    animation: day 1s ease 43s forwards;
+    box-shadow: 5px 5px 10px black;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+}
+
+.continue-button a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+}
+
+/* =============================Animations============================= */
+
+@keyframes day {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes sub {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes layer_one {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
