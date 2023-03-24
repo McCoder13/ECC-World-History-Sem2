@@ -33,9 +33,11 @@ body {
 }
 
 .gen-desc img {
-    width: 200px;
+    transform: translate(1000px, 0px);
+    width: 400px;
     display: inline;
-    float: left;
+    float: right;
+    animation: gen-img-right 1.5s ease-out 0s forwards;
 }
 
 /* ==============================Buttons=============================== */
@@ -77,6 +79,24 @@ body {
 }
 
 @keyframes gen-desc {
+    0% {
+        transform: translate(-1000px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes gen-img-right {
+    0% {
+        transform: translate(1000px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes gen-img-left {
     0% {
         transform: translate(-1000px, 0px);
     }
